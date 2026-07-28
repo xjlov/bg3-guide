@@ -2,6 +2,8 @@
 sidebar_position: 1
 ---
 
+import BuildSimulator from '@site/src/components/BuildSimulator';
+
 # 职业 & Build
 
 《博德之门3》共12个职业，每个职业拥有独特的机制、子职业和玩法。本页面提供职业速查对比表和Build模拟器，帮助你快速构建角色。
@@ -55,6 +57,8 @@ sidebar_position: 1
 
 ## Build 模拟器
 
-使用下方模拟器按5步流程构建你的角色：选择职业 → 等级 → 购点分配属性 → 子职业 → 专长。右侧实时面板展示HP、AC、攻击加值、法术DC等核心数据。
+使用下方模拟器构建角色：选择职业 → 等级 → 购点分配属性 → 子职业 → 专长。实时展示HP、AC、攻击加值、法术DC。
+
+<BuildSimulator />
 
 

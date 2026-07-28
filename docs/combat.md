@@ -1,8 +1,10 @@
 ---
 sidebar_position: 1
 title: 战斗指南
-description: BG3 战斗机制深度解析 — 行动经济、地形、组合技与骰子机制
+description: BG3 战斗机制深度解析
 ---
+
+import DiceRoller from '@site/src/components/DiceRoller';
 
 # 战斗机制详解
 
@@ -112,5 +114,9 @@ description: BG3 战斗机制深度解析 — 行动经济、地形、组合技�
 - 桶的重量占用负重，需力量角色携带
 - 堆叠桶可被敌人发现（影响对话）
 - 荣誉模式中部分Boss免疫即死
+
+## 骰子模拟器
+
+<DiceRoller />
 
 :::

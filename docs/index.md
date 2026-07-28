@@ -3,28 +3,68 @@ sidebar_position: 1
 slug: /
 ---
 
-# ⚔️ 博德之门三 攻略站
+<div class="home-hero">
 
-最全面的 Baldur's Gate 3 中文攻略。基于 Patch 7 最新版本。
+# 博德之门三攻略站
 
-## 快速开始
+最全面的 Baldur's Gate 3 中文攻略 — 从入门到精通
 
-- **纯新手？** → [新手上手指南](/start) — 5分钟看懂游戏怎么玩
-- **选职业？** → [Build 推荐](/builds) — 5个最强Build，含等级拆分与装备清单
-- **卡关了？** → [任务攻略](/quests) — 全三章主线流程，含隐藏要素
-- **找装备？** → [传说装备图鉴](/items/legendary) — 全传说装备属性与获取
+<div class="home-hero-buttons">
+  <a href="/start" class="home-btn home-btn-primary">🚀 新手上路</a>
+  <a href="/builds" class="home-btn home-btn-ghost">⚔️ Build 推荐</a>
+  <a href="/quests" class="home-btn home-btn-ghost">📜 任务攻略</a>
+</div>
 
-## 板块导航
+<div class="home-stats">
+  <span>20 篇精修攻略</span>
+  <span>5 大 Build 拆解</span>
+  <span>95 件装备图标</span>
+  <span>16 个 Boss 图鉴</span>
+  <span>5 张游戏地图</span>
+</div>
 
-| 板块 | 内容 | 亮点 |
-|------|------|------|
-| [入门指南](/start) | 新手上路、角色创建、核心机制 | 27点购算法详解 |
-| [Build 推荐](/builds) | 5大强力Build + Build模拟器 | 等级拆分 + 装备清单 |
-| [任务攻略](/quests) | 全三章主线流程 | 隐藏物品与可错过内容 |
-| [装备图鉴](/items) | 传说装备、消耗品 | 全传说获取路线 |
-| [战斗机制](/combat) | 进阶技巧、荣誉模式 | Boss传奇动作全表 |
-| [速查手册](/compendium) | 队友数据、Boss图鉴 | 快速查阅 |
+</div>
 
-:::info 声明
-个人非商业攻略分享。游戏角色、故事、设定版权归 **Larian Studios** 所有。
-:::
+<div class="home-grid">
+
+<div class="home-card">
+<h3>📘 新手上手指南</h3>
+<p>属性、AC、骰子、法术位一一解释。第一小时手把手路线。角色创建从零教起。</p>
+<a href="/start">开始阅读 →</a>
+</div>
+
+<div class="home-card">
+<h3>⚔️ 职业 Build</h3>
+<p>散打武僧、剑舞诗人、投掷蛮子、战斗大师、风暴术士——5大最强Build完整拆解。</p>
+<a href="/builds">查看 Build →</a>
+</div>
+
+<div class="home-card">
+<h3>📜 任务攻略</h3>
+<p>全三章主线流程。关键抉择后果、隐藏物品、可错过内容全部标出。</p>
+<a href="/quests">第一章走起 →</a>
+</div>
+
+<div class="home-card">
+<h3>🗡️ 装备图鉴</h3>
+<p>毕业配装速查表。传说装备获取指南。精金熔炉锻造教学。95件装备图标。</p>
+<a href="/items">装备查询 →</a>
+</div>
+
+<div class="home-card">
+<h3>🎯 战斗机制</h3>
+<p>动作经济优化。5大团队连招。环境战术。荣誉模式全Boss传奇动作与通关策略。</p>
+<a href="/combat">战斗进阶 →</a>
+</div>
+
+<div class="home-card">
+<h3>📋 速查手册</h3>
+<p>队友好感度系统（赞同/反对/恋爱）。Boss 数据速查表。16个Boss全覆盖。</p>
+<a href="/compendium">速查 →</a>
+</div>
+
+</div>
+
+<div class="home-footer">
+个人非商业攻略分享 · 游戏角色、故事、设定版权归 Larian Studios 所有
+</div>
