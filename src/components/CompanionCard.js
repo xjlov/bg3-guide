@@ -11,7 +11,14 @@ const RARITY_COLORS = {
 /** Character card with portrait, stats, and approval/disapproval tags */
 export default function CompanionCard({ name, enName, race, cls, location, image, likes = [], dislikes = [], romance = false }) {
   const [flipped, setFlipped] = useState(false);
-  const imgSrc = image || `/img/companions/${enName}.png`;
+  const paths = [
+    image || `/img/companions/Portrait_${enName}.png`,
+    `/img/companions/${enName}.png`,
+    `/img/companions/${enName}_Icon.png`,
+  ].filter(Boolean);
+  const [imgIdx, setImgIdx] = useState(0);
+  const imgSrc = paths[imgIdx] || '';
+  const handleError = () => { if (imgIdx < paths.length - 1) setImgIdx(imgIdx + 1); };
 
   return (
     <div
@@ -34,7 +41,7 @@ export default function CompanionCard({ name, enName, race, cls, location, image
           src={imgSrc}
           alt={name}
           style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.4s', transform: flipped ? 'scale(1.05)' : '' }}
-          onError={(e) => { e.target.src = fallback; }}
+          onError={handleError}
         />
         {/* Name overlay */}
         <div style={{
