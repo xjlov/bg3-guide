@@ -1,0 +1,56 @@
+---
+sidebar_position: 1
+title: 同伴大全
+---
+
+import CompanionCard from '@site/src/components/CompanionCard';
+
+# 同伴大全
+
+<div style={{display:'grid',gridTemplateColumns:'repeat(auto-fill,minmax(280px,1fr))',gap:'1rem'}}>
+
+<CompanionCard name="影心" enName="Shadowheart" race="高等半精灵" cls="诡术牧师" location="序章螺壳舰 → 第一章海滩"
+  likes={['尊重隐私','帮助难民','让她自己选择','给她夜兰花']}
+  dislikes={['打探过去','无端残忍','替她做决定']} romance />
+
+<CompanionCard name="阿斯代伦" enName="Astarion" race="高等精灵" cls="游荡者" location="第一章坠机海滩西侧"
+  likes={['支持他成吸血鬼领主','利用他人','幽默风趣','让他吸血']}
+  dislikes={['批评或同情受害者','无偿助人','道德说教']} romance />
+
+<CompanionCard name="盖尔" enName="Gale" race="人类" cls="法师" location="第一章路边传送门"
+  likes={['给他魔法物品','支持不自杀','智识对话','密斯特拉和解']}
+  dislikes={['拒绝给物品','鼓励自杀','轻视魔法']} romance />
+
+<CompanionCard name="莱埃泽尔" enName="Laezel" race="吉斯洋基人" cls="战士" location="第一章林地北部笼子"
+  likes={['尊重传统','直接对话','反抗弗拉基斯','净化装置']}
+  dislikes={['嘲笑种族','懦弱','效忠女王']} romance />
+
+<CompanionCard name="威尔" enName="Wyll" race="人类" cls="邪术师" location="第一章德鲁伊林地"
+  likes={['助难民','摆脱米佐拉','救父亲','打破契约']}
+  dislikes={['自私','继续契约','放弃营救']} romance />
+
+<CompanionCard name="卡菈克" enName="Karlach" race="扎瑞尔提夫林" cls="野蛮人" location="第一章晋升之路河边"
+  likes={['保护弱者','给地狱铁','鼓励她','直接战斗']}
+  dislikes={['滥杀无辜','拒修引擎','背叛']} romance />
+
+<CompanionCard name="哈尔辛" enName="Halsin" race="木精灵" cls="德鲁伊" location="第一章地精牢房 → 第二章入队"
+  likes={['保护自然','助难民','解除诅咒']}
+  dislikes={['破坏自然','无视诅咒']} romance />
+
+<CompanionCard name="明萨拉" enName="Minthara" race="卓尔" cls="复仇圣武士" location="第一章击晕 → 第二章月出之塔"
+  likes={['果断暴力','服从至上']}
+  dislikes={['犹豫','软弱']} romance />
+
+<CompanionCard name="贾希拉" enName="Jaheira" race="高等半精灵" cls="德鲁伊" location="第二章终焉光明旅店"
+  likes={['保护自然','对抗诅咒','尊重长者']}
+  dislikes={['鲁莽冲动']} romance={false} />
+
+<CompanionCard name="明斯克" enName="Minsc" race="人类" cls="游侠" location="第三章下水道·九指公会"
+  likes={['正义英雄','为弱小挺身','和布布交谈']}
+  dislikes={['邪恶懦弱']} romance={false} />
+
+</div>
+
+:::info 明萨拉特殊招募
+第一章地精营地：开非致命攻击(N键)→近战击晕明萨拉→正常杀其他首领→救哈尔辛→第二章月出之塔下层救她招募。
+:::
