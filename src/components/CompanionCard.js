@@ -11,8 +11,7 @@ const RARITY_COLORS = {
 /** Character card with portrait, stats, and approval/disapproval tags */
 export default function CompanionCard({ name, enName, race, cls, location, image, likes = [], dislikes = [], romance = false }) {
   const [flipped, setFlipped] = useState(false);
-  const imgSrc = image || `/img/companions/Portrait_${enName}.png`;
-  const fallback = `/img/companions/${enName}_Icon.png`;
+  const imgSrc = image || `/img/companions/${enName}.png`;
 
   return (
     <div
