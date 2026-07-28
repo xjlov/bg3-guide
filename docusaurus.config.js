@@ -19,7 +19,7 @@ const config = {
       {
         docs: {
           path: 'docs',
-          routeBasePath: '/',
+          routeBasePath: 'docs',
           sidebarPath: require.resolve('./sidebars.js'),
         },
         blog: false,
@@ -37,10 +37,10 @@ const config = {
       items: [
         { to: '/start', label: '入门', position: 'left' },
         { to: '/builds', label: 'Build', position: 'left' },
-        { to: '/quests', label: '任务', position: 'left' },
+        { to: '/docs/quests', label: '任务', position: 'left' },
         { to: '/items', label: '装备', position: 'left' },
-        { to: '/combat', label: '战斗', position: 'left' },
-        { to: '/compendium', label: '速查', position: 'left' },
+        { to: '/docs/combat/honor-mode', label: '战斗', position: 'left' },
+        { to: '/docs/compendium', label: '速查', position: 'left' },
       ],
     },
     footer: {
