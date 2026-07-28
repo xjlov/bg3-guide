@@ -1,85 +1,55 @@
 ---
 sidebar_position: 1
 title: 同伴大全
-description: BG3 全10名同伴 — 招募、好感度、恋爱、个人任务
 ---
 
 import CompanionCard from '@site/src/components/CompanionCard';
 import Bg3Frame from '@site/src/components/Bg3Frame';
-import GoldDivider from '@site/src/components/GoldDivider';
-import ContentCard from '@site/src/components/ContentCard';
 
-<Bg3Frame title="同伴大全" subtitle="全 10 名同伴招募、好感度、恋爱条件" icon="💕">
+<Bg3Frame title="同伴大全" subtitle="全 10 名同伴 · 招募 · 好感度 · 恋爱条件" icon="💕">
 
-<div style={{display:'grid',gridTemplateColumns:'repeat(auto-fill,minmax(280px,1fr))',gap:'1rem',marginTop:'0.5rem'}}>
+<div style={{display:'grid',gridTemplateColumns:'repeat(auto-fill,minmax(280px,1fr))',gap:'1rem'}}>
 
-<CompanionCard name="影心" race="高等半精灵" cls="诡术牧师" location="序章·螺壳舰舱体 → 第一章·海滩"
-  likes={['尊重隐私', '帮助弱小和难民', '让她在莎尔神殿自己选择', '给她夜兰花']}
-  dislikes={['过度打探她的过去', '无端残忍出卖提夫林', '替她做决定']}
-  romance={true} />
+<CompanionCard name="影心" enName="Shadowheart" race="高等半精灵" cls="诡术牧师" location="序章·螺壳舰 → 第一章·海滩"
+  likes={['尊重隐私','帮助弱小和难民','让她在莎尔神殿自己选择','给她夜兰花']}
+  dislikes={['过度打探她的过去','无端残忍出卖提夫林','替她做决定']} romance />
 
-<CompanionCard name="阿斯代伦" race="高等精灵" cls="游荡者" location="第一章·坠机海滩西侧"
-  likes={['支持他成为吸血鬼领主', '利用他人达成目的', '幽默风趣', '让他吸你的血']}
-  dislikes={['批评他或同情受害者', '无偿帮助他人', '道德说教']}
-  romance={true} />
+<CompanionCard name="阿斯代伦" enName="Astarion" race="高等精灵" cls="游荡者" location="第一章·坠机海滩西侧"
+  likes={['支持他成为吸血鬼领主','利用他人达成目的','幽默风趣','让他吸你的血']}
+  dislikes={['批评或同情受害者','无偿帮助他人','道德说教']} romance />
 
-<CompanionCard name="盖尔" race="人类" cls="法师" location="第一章·路边不稳定传送门"
-  likes={['给他魔法物品消耗', '支持他不自爆的路线', '智识相关的对话', '和密斯特拉和解']}
-  dislikes={['拒绝给他魔法物品', '鼓励他自爆', '轻视魔法或知识']}
-  romance={true} />
+<CompanionCard name="盖尔" enName="Gale" race="人类" cls="法师" location="第一章·路边传送门"
+  likes={['给他魔法物品消耗','支持他不自爆','智识对话','和密斯特拉和解']}
+  dislikes={['拒绝给魔法物品','鼓励自爆','轻视魔法或知识']} romance />
 
-<CompanionCard name="莱埃泽尔" race="吉斯洋基人" cls="战士" location="第一章·德鲁伊林地北部笼子"
-  likes={['尊重吉斯洋基传统', '直接的对话', '支持她反抗弗拉基斯', '在养育间完成净化装置']}
-  dislikes={['嘲笑她的种族或信仰', '懦弱回避战斗', '继续效忠弗拉基斯']}
-  romance={true} />
+<CompanionCard name="莱埃泽尔" enName="Laezel" race="吉斯洋基人" cls="战士" location="第一章·林地北部笼子"
+  likes={['尊重吉斯洋基传统','直接对话','支持反抗弗拉基斯','完成净化装置']}
+  dislikes={['嘲笑种族或信仰','懦弱回避战斗','效忠弗拉基斯']} romance />
 
-<CompanionCard name="威尔" race="人类" cls="邪术师" location="第一章·德鲁伊林地训练场"
-  likes={['帮助难民和无辜', '支持他摆脱米佐拉', '救他的父亲(钢铁王座)', '打破契约束缚']}
-  dislikes={['自私自利的选择', '鼓励他继续契约', '放弃营救公爵']}
-  romance={true} />
+<CompanionCard name="威尔" enName="Wyll" race="人类" cls="邪术师" location="第一章·德鲁伊林地训练场"
+  likes={['帮助难民无GU','支持摆脱米佐拉','救父亲(钢铁王座)','打破契约束缚']}
+  dislikes={['自私自利','鼓励继续契约','放弃营救公爵']} romance />
 
-<CompanionCard name="卡菈克" race="扎瑞尔提夫林" cls="野蛮人" location="第一章·晋升之路河边"
-  likes={['保护平民和弱者', '给她地狱铁', '鼓励她活下去', '直接了当的战斗']}
-  dislikes={['滥杀无辜', '拒绝帮她修引擎', '背叛盟友']}
-  romance={true} />
+<CompanionCard name="卡菈克" enName="Karlach" race="扎瑞尔提夫林" cls="野蛮人" location="第一章·晋升之路河边"
+  likes={['保护平民弱者','给她地狱铁','鼓励她活下去','直接战斗']}
+  dislikes={['滥杀无辜','拒绝修引擎','背叛盟友']} romance />
 
-<CompanionCard name="哈尔辛" race="木精灵" cls="德鲁伊" location="第一章·地精营地牢房 → 第二章·旅店入队"
-  likes={['保护自然', '帮助难民', '完成解除诅咒任务']}
-  dislikes={['破坏自然', '无视影界诅咒']}
-  romance={true} />
+<CompanionCard name="哈尔辛" enName="Halsin" race="木精灵" cls="德鲁伊" location="第一章·地精营地牢房 → 第二章入队"
+  likes={['保护自然','帮助难民','解除诅咒任务']}
+  dislikes={['破坏自然','无视影界诅咒']} romance />
 
-<CompanionCard name="明萨拉" race="卓尔" cls="复仇圣武士" location="第一章·地精营地(击晕) → 第二章·月出之塔招募"
-  likes={['果断的暴力手段', '服从至上', '复仇之誓']}
-  dislikes={['犹豫不决', '软弱无能']}
-  romance={true} />
+<CompanionCard name="明萨拉" enName="Minthara" race="卓尔" cls="复仇圣武士" location="第一章·击晕 → 第二章·月出之塔招募"
+  likes={['果断暴力','服从至上','复仇之誓']}
+  dislikes={['犹豫不决','软弱无能']} romance />
 
-<CompanionCard name="贾希拉" race="高等半精灵" cls="德鲁伊" location="第二章·终焉光明旅店"
-  likes={['保护自然和弱者', '对抗暗影诅咒', '尊重长者智慧']}
-  dislikes={['鲁莽冲动']}
-  romance={false} />
+<CompanionCard name="贾希拉" enName="Jaheira" race="高等半精灵" cls="德鲁伊" location="第二章·终焉光明旅店"
+  likes={['保护自然弱者','对抗暗影诅咒','尊重长者']}
+  dislikes={['鲁莽冲动']} romance={false} />
 
-<CompanionCard name="明斯克" race="人类" cls="游侠" location="第三章·下水道 → 九指公会"
-  likes={['正义和英雄行为', '为弱小挺身而出', '和他的仓鼠布布交谈']}
-  dislikes={['邪恶和懦弱']}
-  romance={false} />
+<CompanionCard name="明斯克" enName="Minsc" race="人类" cls="游侠" location="第三章·下水道 → 九指公会"
+  likes={['正义英雄行为','为弱小挺身','和布布交谈']}
+  dislikes={['邪恶懦弱']} romance={false} />
 
 </div>
 
 </Bg3Frame>
-
-<GoldDivider icon="star" />
-
-## 明萨拉特殊招募方法
-
-<ContentCard icon="💀" title="同时拥有哈尔辛和明萨拉">
-
-1. 第一章在地精营地找到明萨拉，**打开非致命攻击**（按 N 键，近战武器）
-2. 用近战击晕她——**不要用远程和法术**
-3. 正常击杀另外两个首领（迦特和拉格兹林），救出哈尔辛
-4. 第二章在月出之塔下层监狱找到被审判的明萨拉，解救可招募
-
-:::warning
-正常流程无法同时拥有哈尔辛和明萨拉。上述击晕方法是唯一保留两人的途径。
-:::
-
-</ContentCard>

@@ -9,9 +9,10 @@ const RARITY_COLORS = {
 };
 
 /** Character card with portrait, stats, and approval/disapproval tags */
-export default function CompanionCard({ name, race, cls, location, image, likes = [], dislikes = [], romance = false }) {
+export default function CompanionCard({ name, enName, race, cls, location, image, likes = [], dislikes = [], romance = false }) {
   const [flipped, setFlipped] = useState(false);
-  const imgSrc = image || `/img/companions/Portrait_${name.replace(/\s/g,'')}.png`;
+  const imgSrc = image || `/img/companions/Portrait_${enName}.png`;
+  const fallback = `/img/companions/${enName}_Icon.png`;
 
   return (
     <div
@@ -34,7 +35,7 @@ export default function CompanionCard({ name, race, cls, location, image, likes 
           src={imgSrc}
           alt={name}
           style={{ width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 0.4s', transform: flipped ? 'scale(1.05)' : '' }}
-          onError={(e) => { e.target.style.display = 'none'; }}
+          onError={(e) => { e.target.src = fallback; }}
         />
         {/* Name overlay */}
         <div style={{
