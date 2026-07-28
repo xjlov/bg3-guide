@@ -7,7 +7,7 @@ const config = {
   favicon: 'img/favicon.svg',
   url: 'https://xjmonika-bg3.fun',
   baseUrl: '/',
-  organizationName: 'xjmon',
+  organizationName: 'xjlov',
   projectName: 'bg3-guide',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
