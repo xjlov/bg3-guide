@@ -1,4 +1,4 @@
-import { themes as prismThemes } from 'prism-react-renderer';
+const { themes: prismThemes } = require('prism-react-renderer');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -76,4 +76,4 @@ const config = {
   },
 };
 
-export default config;
+module.exports = config;
